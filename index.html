@@ -104,6 +104,76 @@
             50% { transform: scale(1); }
         }
 
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes glow {
+            0%, 100% { box-shadow: 0 0 10px rgba(255, 105, 180, 0.5); }
+            50% { box-shadow: 0 0 30px rgba(255, 105, 180, 0.8); }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        header {
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        section {
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .image-container {
+            margin: 40px 0;
+            text-align: center;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            animation: glow 3s ease-in-out infinite;
+            transition: transform 0.3s ease;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+
         .colored-text {
             color: #ff69b4;
             font-weight: bold;
@@ -172,6 +242,11 @@
         </header>
 
         <div class="content">
+            <!-- Sezione Immagine -->
+            <div class="image-container">
+                <!-- Sostituisci il src con il percorso della tua immagine -->
+                <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=600&q=80" alt="Due sorelle abbracciate" />
+            </div>
             <!-- Prima Dedica -->
             <section>
                 <div class="decorative-hearts">💕 ✨ 💕</div>
