@@ -83,13 +83,42 @@
         }
 
         .quote {
-            background: #f8f9fa;
-            border-left: 4px solid #667eea;
+            background: linear-gradient(135deg, #fff5f7 0%, #ffe0e6 100%);
+            border-left: 4px solid #ff69b4;
             padding: 25px;
             margin: 30px 0;
             font-style: italic;
-            color: #555;
+            color: #d1355d;
             line-height: 1.8;
+        }
+
+        .heart {
+            color: #ff1493;
+            margin: 0 5px;
+            animation: heartbeat 1.5s infinite;
+        }
+
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            25% { transform: scale(1.2); }
+            50% { transform: scale(1); }
+        }
+
+        .colored-text {
+            color: #ff69b4;
+            font-weight: bold;
+        }
+
+        .colored-text-rose {
+            color: #ff69b4;
+        }
+
+        .colored-text-purple {
+            color: #9370db;
+        }
+
+        .colored-text-blue {
+            color: #6495ed;
         }
 
         .signature {
@@ -98,6 +127,13 @@
             color: #764ba2;
             margin-top: 30px;
             font-size: 1.1em;
+        }
+
+        .decorative-hearts {
+            text-align: center;
+            font-size: 1.5em;
+            margin: 20px 0;
+            letter-spacing: 10px;
         }
 
         footer {
@@ -131,58 +167,62 @@
 <body>
     <div class="container">
         <header>
-            <h1>✨ Dediche Speciali ✨</h1>
-            <p>Parole dal cuore per persone straordinarie</p>
+            <h1>✨ <span class="heart">❤️</span> Dediche Speciali <span class="heart">❤️</span> ✨</h1>
+            <p class="colored-text-rose">💕 Parole dal cuore per persone straordinarie 💕</p>
         </header>
 
         <div class="content">
             <!-- Prima Dedica -->
             <section>
-                <h2>A Te, Persona Straordinaria</h2>
+                <div class="decorative-hearts">💕 ✨ 💕</div>
+                <h2>A Te, <span class="colored-text">Persona Straordinaria</span></h2>
                 <p>Nel silenzio delle cose non dette e nelle parole che risuonano nel cuore, desidero dedicarti queste righe.</p>
-                <p>Tu, che con la tua presenza illumini i giorni,<br>
-                che trasformi i momenti ordinari in ricordi indimenticabili,<br>
-                che porti con te un calore che solo i cuori sinceri sanno riconoscere.</p>
-                <p>Non esistono parole sufficienti per descrivere quanto sia speciale la tua essenza.<br>
-                La tua gentilezza è un dono raro,<br>
-                il tuo sorriso è medicina per l'anima,<br>
-                la tua lealtà è il fondamento su cui si costruisce la fiducia vera.</p>
+                <p>Tu, che con la tua <span class="colored-text-rose">presenza illumini i giorni</span>,<br>
+                che <span class="colored-text-purple">trasformi i momenti ordinari in ricordi indimenticabili</span>,<br>
+                che porti con te un <span class="colored-text-blue">calore che solo i cuori sinceri sanno riconoscere</span>.</p>
+                <p>Non esistono parole sufficienti per descrivere quanto sia <span class="colored-text">speciale</span> la tua essenza.<br>
+                La tua <span class="colored-text-rose">gentilezza è un dono raro</span>,<br>
+                il tuo <span class="colored-text-purple">sorriso è medicina per l'anima</span>,<br>
+                la tua <span class="colored-text-blue">lealtà è il fondamento su cui si costruisce la fiducia vera</span>.</p>
                 <p>In un mondo che corre veloce e spesso dimentica l'essenziale,<br>
-                tu rimani fermo, consapevole, autentico.</p>
-                <p>Questa dedica è una piccola finestra sul grande universo di gratitudine che provo nei tuoi confronti.<br>
-                Sei tu che rendi la vita più bella, più significativa, più degna di essere vissuta.</p>
-                <p>Grazie di esistere.<br>
-                Grazie di essere esattamente chi sei.</p>
-                <p class="signature">Con stima, affetto e profonda ammirazione.</p>
-                <div class="quote">"Le persone speciali non sono quelle che lasciano le tracce più profonde nei nostri cuori. Sono quelle che ci fanno sentire, in ogni momento passato insieme, che la vita vale la pena di essere vissuta."</div>
+                tu rimani <span class="colored-text">fermo, consapevole, autentico</span>.</p>
+                <p>Questa dedica è una piccola finestra sul grande universo di <span class="colored-text-rose">gratitudine</span> che provo nei tuoi confronti.<br>
+                Sei tu che rendi la vita <span class="colored-text">più bella, più significativa, più degna di essere vissuta</span>.</p>
+                <p><span class="colored-text-purple">Grazie di esistere.</span><br>
+                <span class="colored-text-blue">Grazie di essere esattamente chi sei.</span></p>
+                <p class="signature">Con stima, affetto e profonda ammirazione. <span class="heart">❤️</span></p>
+                <div class="quote">💫 "Le persone speciali non sono quelle che lasciano le tracce più profonde nei nostri cuori. Sono quelle che ci fanno sentire, in ogni momento passato insieme, che la vita vale la pena di essere vissuta." 💫</div>
+                <div class="decorative-hearts">💕 ✨ 💕</div>
             </section>
 
             <div class="separator"></div>
 
             <!-- Dedica per la Sorella -->
             <section>
-                <h2>Per Mia Sorella</h2>
+                <div class="decorative-hearts">💕 ✨ 💕</div>
+                <h2>Per Mia <span class="colored-text">Sorella</span> <span class="heart">❤️</span></h2>
                 <p>Sorella mia, dedico queste parole a te.</p>
-                <p>Tu, che sei stata con me dai primi respiri della vita,<br>
-                che conosci i meandri del mio cuore come nessun altro,<br>
-                che hai asciugato le lacrime e gioito nei miei successi.</p>
-                <p>Siamo state disegnate dallo stesso amore, cresciute sotto lo stesso cielo,<br>
-                eppure ogni giorno scopro in te qualcosa di nuovo, di meraviglioso.</p>
-                <p>La tua forza mi ispira,<br>
-                la tua dolcezza mi conforta,<br>
-                la tua sincerità mi guida.</p>
+                <p>Tu, che sei stata con me dai <span class="colored-text-rose">primi respiri della vita</span>,<br>
+                che <span class="colored-text-purple">conosci i meandri del mio cuore come nessun altro</span>,<br>
+                che hai <span class="colored-text-blue">asciugato le lacrime e gioito nei miei successi</span>.</p>
+                <p>Siamo state disegnate dallo <span class="colored-text">stesso amore</span>, cresciute sotto lo stesso cielo,<br>
+                eppure ogni giorno scopro in te qualcosa di <span class="colored-text-rose">nuovo, di meraviglioso</span>.</p>
+                <p>La tua <span class="colored-text-purple">forza mi ispira</span>,<br>
+                la tua <span class="colored-text-rose">dolcezza mi conforta</span>,<br>
+                la tua <span class="colored-text-blue">sincerità mi guida</span>.</p>
                 <p>Con te, non ho bisogno di spiegazioni:<br>
-                uno sguardo basta, una mezza parola è sufficiente,<br>
-                il silenzio stesso diventa una conversazione profonda.</p>
-                <p>Sei la mia radice quando le tempeste arrivano,<br>
-                sei la mia ala quando desidero volare,<br>
-                sei il mio rifugio quando il mondo diventa troppo.</p>
-                <p>In questo cammino chiamato vita, avere te accanto è una benedizione che non darei mai per scontata.</p>
-                <p>Grazie per essere la sorella che ogni anima desidererebbe.<br>
-                Grazie per amarmi anche nei miei momenti di debolezza.<br>
-                Grazie di essere semplicemente... tu.</p>
-                <p class="signature">Con tutto il mio amore.</p>
-                <div class="quote">"Una sorella è per la vita, non è soltanto legame di sangue. È la scelta che il destino ha fatto al nostro posto, e la cosa più giusta che abbia mai deciso."</div>
+                uno sguardo basta, una <span class="colored-text">mezza parola è sufficiente</span>,<br>
+                il <span class="colored-text-purple">silenzio stesso diventa una conversazione profonda</span>.</p>
+                <p>Sei la mia <span class="colored-text-rose">radice quando le tempeste arrivano</span>,<br>
+                sei la mia <span class="colored-text-blue">ala quando desidero volare</span>,<br>
+                sei il mio <span class="colored-text-purple">rifugio quando il mondo diventa troppo</span>.</p>
+                <p>In questo cammino chiamato vita, avere te accanto è una <span class="colored-text">benedizione che non darei mai per scontata</span>.</p>
+                <p><span class="colored-text-rose">Grazie per essere la sorella che ogni anima desidererebbe.</span><br>
+                <span class="colored-text-blue">Grazie per amarmi anche nei miei momenti di debolezza.</span><br>
+                <span class="colored-text-purple">Grazie di essere semplicemente... tu.</span></p>
+                <p class="signature">Con tutto il mio amore. 💕</p>
+                <div class="quote">💫 "Una sorella è per la vita, non è soltanto legame di sangue. È la scelta che il destino ha fatto al nostro posto, e la cosa più giusta che abbia mai deciso." 💫</div>
+                <div class="decorative-hearts">💕 ✨ 💕</div>
             </section>
         </div>
 
